@@ -78,8 +78,9 @@ def clear():
 
 """Setting the application canvas and required buttons
 also indicating which function to run at the click of a button"""
-# application background
-canvas = tk.Canvas(root, height=600, width=500, bg="#512C68")
+
+# application background #626262
+canvas = tk.Canvas(root, height=600, width=500, bg="#5B0059")
 canvas.create_text(250, 40, text="Files/Apps Launcher", fill="white", font=("Segoe 20 bold"))
 canvas.pack()
 
@@ -94,12 +95,12 @@ upload.place(relx=0.2, rely=0.7)
 
 # launch file button
 run = tk.Button(root, text="Jump Start", height=2, width=10,
-                padx=10, pady=3, bg="white", command=launcher)
+                padx=10, pady=3, bg="#DEFFF2", fg="black", command=launcher)
 run.place(relx=0.62, rely=0.7)
 
 # clear queue button
 reset = tk.Button(root, text="Clear Queue", height=2, width=40,
-                  padx=10, pady=3, bg="#FF2812", fg="white", command=clear)
+                  padx=10, pady=3, bg="#FFE1DE", fg="black", command=clear)
 reset.place(relx=0.2, rely=0.8)
 
 
